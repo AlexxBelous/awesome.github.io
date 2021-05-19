@@ -1,28 +1,4 @@
-// All answer option
-
-const option1 = document.querySelector(".option1");
-const option2 = document.querySelector(".option2");
-const option3 = document.querySelector(".option3");
-const option4 = document.querySelector(".option4");
-
-// All our options
-const optionElements = document.querySelectorAll(".option");
-
-const question = document.getElementById("question");
-const numberOfQuestion = document.getElementById("number-of-question");
-const numberOfAllQuestion = document.getElementById("number-of-all-questions");
-
-let indexOfQuestion; // Index of the current question
-let indexOfPage = 0; // Page index
-
-const answersTracker = document.getElementById("answers-tracker");
-const btnNext = document.getElementById("btn-next");
-
-let score = 0; // The final result of the quiz
-
-const correctAnswer = document.getElementById("correct-answer");
-const numberOfAllQuestion2 = document.getElementById("number-of-all-questions-2");
-const btnTryAgain = document.getElementById("btn-try-again");
+// All questions and answers options
 
 const questions = [
     {
@@ -72,6 +48,32 @@ const questions = [
 
 
 ];
+
+const option1 = document.querySelector(".option1");
+const option2 = document.querySelector(".option2");
+const option3 = document.querySelector(".option3");
+const option4 = document.querySelector(".option4");
+
+// All our options
+const optionElements = document.querySelectorAll(".option");
+
+const question = document.getElementById("question");
+const numberOfQuestion = document.getElementById("number-of-question");
+const numberOfAllQuestion = document.getElementById("number-of-all-questions");
+
+let indexOfQuestion; // Index of the current question
+let indexOfPage = 0; // Page index
+
+const answersTracker = document.getElementById("answers-tracker");
+const btnNext = document.getElementById("btn-next");
+
+let score = 0; // The final result of the quiz
+
+const correctAnswer = document.getElementById("correct-answer");
+const numberOfAllQuestion2 = document.getElementById("number-of-all-questions-2");
+const btnTryAgain = document.getElementById("btn-try-again");
+
+
 
 numberOfAllQuestion.innerHTML = questions.length // Number of all questions
 
