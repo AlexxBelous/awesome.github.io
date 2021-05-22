@@ -61,18 +61,18 @@ const question = document.getElementById("question");
 const numberOfQuestion = document.getElementById("number-of-question");
 const numberOfAllQuestion = document.getElementById("number-of-all-questions");
 
-let indexOfQuestion; // Index of the current question
-let indexOfPage = 0; // Page index
-
 const answersTracker = document.getElementById("answers-tracker");
 const btnNext = document.getElementById("btn-next");
 
-let score = 0; // The final result of the quiz
+
 
 const correctAnswer = document.getElementById("correct-answer");
 const numberOfAllQuestion2 = document.getElementById("number-of-all-questions-2");
 const btnTryAgain = document.getElementById("btn-try-again");
 
+let indexOfQuestion; // Index of the current question
+let indexOfPage = 0; // Page index
+let score = 0; // The final result of the quiz
 
 
 numberOfAllQuestion.innerHTML = questions.length // Number of all questions
@@ -194,5 +194,3 @@ window.addEventListener('load', () => {
     randomQuestion();
     answerTracker(); 
 })
-
-
